@@ -1,0 +1,134 @@
+.printable {
+    border: 1px dotted #CCCCCC ;
+    padding: 15px ;
+}
+.offer {
+   /* border-bottom: 1px solid #EEEEEE;*/
+    margin-top: 15px;
+    min-height: 120px;
+    padding: 0 0 5px;
+    position: relative;
+}
+.curled {
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+.curled.offer:after {
+    /*background-image: -moz-linear-gradient(center top , #FFFFFF 0%, rgba(0, 0, 0, 0.03) 10%, rgba(255, 255, 255, 0.03) 70%, rgba(255, 255, 255, 0.03) 100%);*/
+    bottom: -10px;
+    content: "";
+    height: 10px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+.curled .curled-page:after {
+    left: auto;
+    right: 1px;
+    transform: skew(5deg) rotate(5deg);
+}
+.curled .curled-page:before, .curled .curled-page:after {
+    background: none repeat scroll 0 0 rgba(210, 210, 210, 0.6);
+    bottom: -2px;
+    box-shadow: 0 2px 3px 0 rgba(210, 210, 210, 0.4);
+    content: "";
+    height: 55%;
+    left: 4px;
+    max-height: 100px;
+    max-width: 300px;
+    position: absolute;
+    transform: skew(-5deg) rotate(-5deg);
+    width: 70%;
+    z-index: -1;
+}
+
+.curled.offer .curled-page {
+    display: block;
+    left: 16px;
+    position: absolute;
+    top: 5px;
+}
+.curled .curled-page {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D2D2D2;
+    border-radius: 4px 4px 4px 4px;
+    display: block;
+    height: 108px;
+    line-height: 106px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 108px;
+}
+
+
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.curled.offer .detail {
+    margin-left: 142px;
+}
+.offer .detail {
+    margin: 0 0 0 115px;
+    /*position: relative;*/
+}
+
+.offer .detail .description .title {
+    margin-bottom: 4px;
+    position: relative;
+}
+.offer .detail .description h3, .offer .detail .description .offer_detail span.hthree, .offer_detail .offer .detail .description span.hthree {
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+.offer .detail .description a {
+    text-decoration: none;
+}
+
+.offer .detail p {
+    margin: 0 0 10px;
+    padding-left: 0 !important;
+    font-size: 0.8125em !important;
+    line-height: 1.4px;
+    color: #333333;
+}
+.discount {
+    clear: both;
+    margin-top: 0;
+}
+.addthis_toolbox{
+    position: absolute;
+    bottom: 5px;
+}
+.expiry_date,.print{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    padding-bottom: 0 !important;
+}
+.expiry_date span,.print span{
+    color:#a9a9a9 !important;
+
+}
+.img {
+    width:100px;
+    height:100px;
+}
+.addthis_toolbox,.print{
+    display: none !important;
+}
+

@@ -1,0 +1,28 @@
+.reservation .infoBlock{
+    padding-bottom: 14px;
+}
+.reservation label{
+    font-family: Helvetica,"Helvetica Neue",Arial,"Nimbus Sans L",sans-serif;
+    font-size: 85%;
+    font-weight: bold;
+    line-height: 1.4;
+}
+.reservation small{
+    color: red;
+    padding-left: 5px;
+}
+
+label.error {
+    float: none;
+    color: red;
+    padding-left: .5em;
+    vertical-align: top;
+}
+
+#email{
+    width: 300px;
+}
+
+.success_message{
+    color: #FFF !important;
+}
